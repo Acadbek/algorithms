@@ -186,12 +186,15 @@ function randomize() {
     let randomIndex = Math.floor(Math.random() * range)
     let randomUser = user.notes[randomIndex]
     let users = document.querySelector('.wrapper-ul__li')
+    users.style.listStyle = 'none'
     users.innerHTML = `<h2>${randomUser.title}</h2> <h3>${randomUser.author}</h3><p>${randomUser.quote}</p>`
-    let userPhotoSrc = `https://randomuser.me/api/portraits/men/${randomIndex}.jpg`
     let userImg = document.querySelector('.img')
+    let gender = ['men', 'women'];
+    let thing = gender[Math.floor(Math.random() * gender.length)];
+    let userPhotoSrc = `https://randomuser.me/api/portraits/${thing}/${randomIndex}.jpg`
+    console.log(thing)
     userImg.src = userPhotoSrc
 }
-
 randomize()
 
 
