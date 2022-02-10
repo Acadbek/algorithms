@@ -185,7 +185,6 @@ function randomize() {
     let range = user.notes.length
     let randomIndex = Math.floor(Math.random() * range)
     let randomUser = user.notes[randomIndex]
-    console.log(randomUser)
     let users = document.querySelector('.wrapper-ul__li')
     users.innerHTML = `<h2>${randomUser.title}</h2> <h3>${randomUser.author}</h3><p>${randomUser.quote}</p>`
     let userPhotoSrc = `https://randomuser.me/api/portraits/men/${randomIndex}.jpg`
