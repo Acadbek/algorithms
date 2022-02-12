@@ -199,7 +199,7 @@ function randomize() {
     // users.randomUser.title.style.margin = '20px'
 }
 
-// window.addEventListener('DOMContentLoaded', randomize)
+// window.addEventListener('DOMCont entLoaded', randomize)
 
 button.addEventListener('click', randomize)
 
