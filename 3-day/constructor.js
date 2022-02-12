@@ -181,6 +181,8 @@ const user = {
 };
 
 
+const button = document.querySelector('.card-button')
+
 function randomize() {
     let range = user.notes.length
     let randomIndex = Math.floor(Math.random() * range)
@@ -194,8 +196,14 @@ function randomize() {
     let userPhotoSrc = `https://randomuser.me/api/portraits/${thing}/${randomIndex}.jpg`
     console.log(thing)
     userImg.src = userPhotoSrc
+    // users.randomUser.title.style.margin = '20px'
 }
-randomize()
+
+// window.addEventListener('DOMContentLoaded', randomize)
+
+button.addEventListener('click', randomize)
+
+// randomize()
 
 
 // ===============================================================
