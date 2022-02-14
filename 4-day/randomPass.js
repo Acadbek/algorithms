@@ -13,15 +13,28 @@ const words = ['seat', 'pen', 'broad', 'vapor', 'ocean',
     'poem', 'depth', 'press', 'crowd', 'herd', 'drink', 'worry',
     'dried', 'dig', 'new', 'rest', 'play', 'win', 'strong'];
 
-function getPassword() {
-    const chars = '0123456789!@#$%&';
-    const clength = chars.length;
-    let password = ''
 
-    let randomPass = chars.concat(words)
-    console.log(randomPass)
+function getPassword() {
+
+    const chars = '0123456789!@#$%&';
+    const clength = chars.length; // 16
+    let password = '';
+
+    while (password.length < 20) {
+        password = password.concat(randomWord(chars.length));
+        password = password.concat(chars[randomNumber(clength)]);
+    }
+    password = password.substring(0, 16);
+
+    document.getElementById('password').value = password;
 }
 
-let btn = document.querySelector('#password')
+function randomNumber(l) {
+    return Math.floor(Math.random() * l);
+}
 
-btn.addEventListener('click', getPassword)
+function randomWord() {
+    const number = randomNumber(words.length); // 44
+    return words[number]; // word at index 44
+}
+// randomBel()

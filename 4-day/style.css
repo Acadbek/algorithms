@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     font-family: "sans";
@@ -56,21 +56,31 @@
   
   ::-webkit-input-placeholder {
     text-align: center;
-  }
-  
-  #btn {
-    position: absolute;
-    cursor: pointer;
-    color: #fff;
-    background: #333;
-    font-size: 24px;
-    padding: 15px;
-    border-radius: 8px;
-    bottom: 0;
-    margin: 200px auto;
-  }
-  
-  #btn:active {
+  } */
+
+#btn {
+  cursor: pointer;
+  color: #fff;
+  background: #333;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  width: 150px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .wrapper{
+  display: flex;
+  flex-direction: column;
+} */
+
+/* #btn:active {
     background: #1e8e3e;
   }
   
@@ -87,4 +97,4 @@
   
     footer a:visited {
       color: inherit;
-    }
+    } */
