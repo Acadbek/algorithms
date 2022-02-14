@@ -1,6 +1,6 @@
 const user = document.querySelector('#user-name');
 const btn = document.querySelector('#emoji-btn');
-const emojis = ["😆", "😅", "🤣", "😂", "😀", "🤑", "🤨", "🙂", "😊", "😗", "😛", "😏", "🤥", "😴", "🥺", "😧", "🤗", "🤩",
+const emojies = ["😆", "😅", "🤣", "😂", "😀", "🤑", "🤨", "🙂", "😊", "😗", "😛", "😏", "🤥", "😴", "🥺", "😧", "🤗", "🤩",
     "😎", "🥳", "😍", "😱", "🤓", "😷", "🥴", "😳", "🤯", "🤫", "🤑", "😪", "😴", "😵", "😶‍🌫️", "🥵", "🥶", "😳", "🤪", "😵", "🥴",
     "😵‍💫", "😠", "😡", "🤮", "🤢", "🤒", "😷", "🤬", "🤧", "😇", "🥳"];
 
@@ -20,11 +20,11 @@ const names = ['John', 'Jane', 'Mary', 'Mark', 'Bob', 'Tom', 'Sam', 'Alex', 'Mik
     'Ellie', 'Hannah', 'Ella', 'Scarlett', 'Isla'];
 
 btn.addEventListener('mouseover', () => {
-    btn.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+    btn.innerText = emojies[Math.floor(Math.random() * emojies.length)];
     user.innerHTML = names[Math.floor(Math.random() * names.length)];
 })
 
 btn.addEventListener('click', () => {
-    btn.innerText = emojis[Math.floor(Math.random() * emojis.length)]
+    btn.innerText = emojies[Math.floor(Math.random() * emojies.length)]
     user.innerHTML = names[Math.floor(Math.random() * names.length)];
 })
