@@ -41,6 +41,12 @@ button#emoji-btn {
   cursor: pointer;
 }
 
+.section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 button#emoji-btn:hover {
   transform: scale(1.3);
   filter: grayscale(0);
