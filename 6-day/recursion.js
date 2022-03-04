@@ -6,7 +6,7 @@
 
 
 function func(num) {
-    console.log(num)
+    // console.log(num)
     const newNum = num - 1
     if (num > 0) {
         func(newNum)
