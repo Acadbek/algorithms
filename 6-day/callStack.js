@@ -1,9 +1,9 @@
 const p = document.querySelector('#text')
 const input = document.querySelector('#input')
-
+const btn = document.querySelector('#btn')
 
 function rever() {
-    input.addEventListener('input', () => {
+    btn.addEventListener('click', () => {
         const rev = []
         const leng = input.value.length - 1
 
@@ -11,7 +11,15 @@ function rever() {
             rev.push(input.value[i])
         }
 
+        const rev2 = rev.reverse()
         p.innerHTML = rev
+        console.log(rev2)
+
+        if (rev == rev2) {
+            console.log(true)
+        } else {
+            console.log(false)
+        }
         return rev.join(' ')
     })
 }
