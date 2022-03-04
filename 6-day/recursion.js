@@ -1,23 +1,16 @@
 // // Recursion
-// function rec(num) {
-//     const newNum = num - 1
-//     // console.log(newNum)
-//     if (newNum == 0) {
-//         return
-//     }
-//     else {
-//         // console.log(num)
-//         rec(num)
-//     }
-// }
 
-// rec(10)
+// consolega 10 dan orqaga sanab ya`ni 10, 9, 8, 7... return qiladi,
+// ifni ichida agar num dan katta bo'lsa func funksiyani yana qaytda ishlashi yozilgan.
+// Funksiya ichida o`sha funksiyani qayta ishlatish
 
-function countDown(number) {
-    console.log(number);
-    const newNumber = number - 1;
-    if (newNumber > 0) {
-        countDown(newNumber);
+
+function func(num) {
+    console.log(num)
+    const newNum = num - 1
+    if (num > 0) {
+        func(newNum)
     }
 }
-countDown(4);
+
+func(10)
