@@ -16,7 +16,7 @@ function Car(name, color, isBuy) {
     this.color = color;
     this.isBuy = isBuy;
     this.speed = function () {
-        console.log(`${this.name} is running 110km/h`);
+        // console.log(`${this.name} is running 110km/h`);
     }
 }
 

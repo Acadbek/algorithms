@@ -10,7 +10,7 @@ const data = new Date();
 // data = Wed Feb 09 2022 18:32:32 GMT+0500 (Uzbekistan Standard Time)
 
 // get full year
-console.log(data.getFullYear()); // = 2022
+// console.log(data.getFullYear()); // = 2022
 
     // ------------- GET --------------------
 
