@@ -1,48 +1,61 @@
-const p = document.querySelector('#text')
-const input = document.querySelector('#input')
-const btn = document.querySelector('#btn')
+// 'use strict';
+// const p = document.querySelector('#text')
+// const input = document.querySelector('#input')
+// const btn = document.querySelector('#btn')
 
-function rever() {
-    btn.addEventListener('click', () => {
-        const rev = []
-        const leng = input.value.length - 1
+// function reverseFunc() {
+//     btn.addEventListener('click', () => {
+//         const revArr = []
+//         const valueLength = input.value.length - 1
+//         for (let i = valueLength; i >= 0; i--) {
+//             revArr.push(input.value[i])
+//         }
+//         let revValue = revArr.join('')
+//         let ourValue = input.value
+//         console.log(revValue)
+//         console.log(ourValue)
 
-        for (let i = leng; i >= 0; i--) {
-            rev.push(input.value[i])
-        }
+//         if (revValue == ourValue) {
+//             console.log(true)
+//         }
+//         else {
+//             console.log(false)
+//         }
+//     })
+// }
 
-        const rev2 = rev.reverse()
-        p.innerHTML = rev
-        console.log(rev2)
+// reverseFunc()
 
-        if (rev == rev2) {
-            console.log(true)
-        } else {
-            console.log(false)
-        }
-        return rev.join(' ')
-    })
+
+function reverX(x) {
+    const array = []
+    const value = x.toString().length - 1
+    for (let i = value; i >= 0; i--) {
+        array.push(x.toString()[i])
+    }
+    let revValue = array.join('')
+    if (x == revValue) {
+        return true
+    } else {
+        return false
+    }
 }
 
-rever()
-// function ReverseString(str) {
+reverX(121)
 
-//     // Check input
-//     if (!str || str.length < 2 ||
-//         typeof str !== 'string') {
-//         return 'Not valid';
-//     }
 
-//     // Take empty array revArray
-//     const revArray = [];
-//     const length = str.length - 1;
-
-//     // Looping from the end
-//     for (let i = length; i >= 0; i--) {
-//         revArray.push(str[i]);
-//     }
-
-//     // Joining the array elements
-//     return revArray.join('');
-// }
-// document.write(ReverseString("asadbek"))
+// const isPalindrome = nums => {
+//     let length = Math.floor(Math.log(nums) / Math.log(10) + 1);
+//     while (length > 0) {
+//         let last = Math.abs(nums − Math.floor(nums / 10) * 10);
+//         let first = Math.floor(nums / Math.pow(10, length −1));
+//         if (first != last) {
+//             return false;
+//         };
+//         nums −= Math.pow(10, length−1) * first;
+//         nums = Math.floor(nums / 10);
+//         length −= 2;
+//     };
+//     return true;
+// };
+// isPalindrome
