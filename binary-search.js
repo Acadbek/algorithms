@@ -68,7 +68,7 @@ binarySearch(list, 24)
 const linearSearch = (arr, target) => {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] === target) {
-            console.log(`index topildi ${target}`)
+            console.log(`index topildi bu ${target}`)
             break
         }
     }
