@@ -23,9 +23,9 @@
 //         qoldirib, qolgan yarmini tashlab yuboraman. va bu ish index topilguncha davom etadi.
 
 // QO'SHIMCHA: let A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ... 100] 
-//             Linear search algaritmida A ichidan masalan eng oxirgi 100 soni topmoqchi bo'lsam 100 ta qadam bilan kelaman ya'ni O(n), 
+//             Linear search algaritmida A ichidan eng oxirgi 100 soni topmoqchi bo'lsam 100 ta qadam bilan kelaman ya'ni O(n), 
 //               12 ni o'ylagan bo'lsam 12 ta qadam bilgan kelaman.
-//             Binary search algaritmida A ichidan masalan 100 ni o'ylagan bo'lsam 6 ta qadam bilgan kelaman. ya'ni O(log n)
+//             Binary search algaritmida A ichidan 100 ni o'ylagan bo'lsam 6 ta qadam bilan kelaman. ya'ni  O log2(n)
 //            
 //             Linear searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni N ga teng bo'ladi. 
 //                    N = 2048, max-qadam soni (2048) ta qadamga teng.
