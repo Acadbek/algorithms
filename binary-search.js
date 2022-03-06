@@ -27,5 +27,5 @@
 //               12 ni o'ylagan bo'lsam 12 ta qadam bilgan kelaman.
 //             Binary search algaritmida A ichidan masalan 100 ni o'ylagan bo'lsam 6 ta qadam bilgan kelaman. ya'ni O(log n)
 
-// Linear searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni N ga teng bo'ladi.
-// Binary searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni log2(n) ga teng bo'ladi.
+// Linear searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni N ga teng bo'ladi. N = 2048, max-qadam soni (2048) ta qadamga teng.
+// Binary searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni log2(n) ga teng bo'ladi. N = 2048, max-qadam soni log2(2048) = (11) qadamga teng.
