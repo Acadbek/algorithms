@@ -26,3 +26,6 @@
 //             Linear search algaritmida A ichidan masalan eng oxirgi 100 soni topmoqchi bo'lsam 100 ta qadam bilan kelaman ya'ni O(n), 
 //               12 ni o'ylagan bo'lsam 12 ta qadam bilgan kelaman.
 //             Binary search algaritmida A ichidan masalan 100 ni o'ylagan bo'lsam 6 ta qadam bilgan kelaman. ya'ni O(log n)
+
+// Linear searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni N ga teng bo'ladi.
+// Binary searchda N ta elementdan iborat ro'yxat uchun, max-qadam soni log2(n) ga teng bo'ladi.
