@@ -39,20 +39,20 @@ function binarySearch(sortedArray, key) {
     let start = 0;
     let end = sortedArray.length - 1;
     if (start > end) {
-        console.log(false);
+        return false;
     }
     else {
         while (start <= end) {
             let middle = Math.floor((start + end) / 2);
 
             if (sortedArray[middle] === key) {
-                console.log(middle, 'mid');
+                return middle
             } else if (sortedArray[middle] < key) {
                 start = middle + 1;
-                console.log(key, 'end')
+                return key
             } else {
                 end = middle - 1;
-                console.log(key, 'start')
+                return key
             }
             break;
         }
