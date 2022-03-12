@@ -14,7 +14,7 @@
 // 3 - o'rta qiymatni topib olamiz. m = (p + t) / 2
 // 4 - agar (A[m] = T), (m) ni qaytaramiz. Dastur to'xtaydi.
 // 5 - agar (A[m] < T) bo'lsa, (P = m + 1) qilamiz, Endi boshidagi chegara  (m + 1) ga teng. Ya'ni (A) ni yarmini qoldirdik.
-// 6-  agar (A[m] > T) bo'lsa, (T = m - 1) qilamiz, Endi oxirgi chegara (m - 1) ga teng.
+// 6 -  agar (A[m] > T) bo'lsa, (T = m - 1) qilamiz, Endi oxirgi chegara (m - 1) ga teng.
 
 
 
