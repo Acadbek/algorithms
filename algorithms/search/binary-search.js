@@ -4,7 +4,7 @@
 // Source: You-tube / sariqdev
 
 
-// First algorithm is ==== BINARY SEARCH ===
+// First algorithm is ==== BINARY SEARCH ====
 
 
 
