@@ -35,49 +35,25 @@
 
 // ============================================================
 
+function binarySearch(sortedArray, key) {
+    let start = 0;
+    let end = sortedArray.length - 1;
 
-// binary search function
-const binarySearch = (arr, item) => {
-    let boshi = 0
-    let oxri = arr.length - 1
-    while (boshi <= oxri) {
-        let orta = Math.floor(boshi + oxri) / 2
-        console.log(orta)
-        if (arr[orta] === item) {
-            console.log(orta, 'item o`rtadan topildi')
-        } else if (arr[orta] < item) {
-            boshi = orta + 1
-            console.log(item, 'boshidan topildi')
-        } else if (arr[orta] > item) {
-            oxri = orta - 1
-            console.log(item, 'item oxridan topildi')
-        } else if (!item) {
-            console.log(false)
+    while (start <= end) {
+        let middle = Math.floor((start + end) / 2);
+
+        if (sortedArray[middle] === key) {
+            console.log(middle, 'mid');
+        } else if (sortedArray[middle] < key) {
+            start = middle + 1;
+            console.log(key, 'end')
+        } else {
+            end = middle - 1;
+            console.log(key, 'start')
         }
-        break
+        break;
     }
-    console.log(false)
+    return -1;
 }
 
-const list = [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
-
-binarySearch(list, 24)
-
-// =============================================================
-
-const linearSearch = (arr, target) => {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === target) {
-            console.log(`index topildi bu ${target}`)
-            break
-        }
-    }
-}
-
-let array = [1, 19, 5, 11, 22, 55]
-let oshaIndex = 1
-
-linearSearch(array, oshaIndex)
-
-// ============================================================
-
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8)
