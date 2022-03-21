@@ -46,19 +46,19 @@ function binarySearch(sortedArray, key) {
             let middle = Math.floor((start + end) / 2);
 
             if (sortedArray[middle] === key) {
-                return middle
+                console.log(middle, 'mid')
             } else if (sortedArray[middle] < key) {
                 start = middle + 1;
-                return key
+                console.log(key, 'end')
             } else {
                 end = middle - 1;
-                return key
+                console.log(key, 'start')
             }
             break;
         }
     }
 }
 
-binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 13)
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 11)
 
 // return 8 end

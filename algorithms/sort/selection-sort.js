@@ -1,4 +1,4 @@
-// SELECTION SORT
+// SELECTION SORT bu tartibsiz ro'yxatni tartibli qilib beradi.
 // 1- Bosh ro'yxat yaratib olish.
 // 2- Asl ro'yxatdagi eng katta qiymatni topib olish.
 
