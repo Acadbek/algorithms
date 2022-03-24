@@ -16,18 +16,18 @@
 
 
 
-function bblSort(arr) {
-
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = 0; j < (arr.length - i - 1); j++) {
-            if (arr[j] > arr[j + 1]) {
-                var temp = arr[j]
-                arr[j] = arr[j + 1]
-                arr[j + 1] = temp
+let bubbleSort = (inputArr) => {
+    let len = inputArr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (inputArr[j] > inputArr[j + 1]) {
+                let tmp = inputArr[j];
+                inputArr[j] = inputArr[j + 1];
+                inputArr[j + 1] = tmp;
             }
         }
     }
-    console.log(arr, 'bblsort');
-}
-var arr = [234, 43, 55, 63, 5, 6, 235, 547];
-bblSort(arr);
+    console.log(inputArr, 'bbl sort');
+};
+
+bubbleSort([24, 5, 5, 6, 7, 3, 2, 1, 4, 4, 34, 1, 1, 65, 6, 8, 34, 132, 1, 2, 24, 46])
