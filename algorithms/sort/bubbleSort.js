@@ -11,10 +11,8 @@
 // Big O: O(n^2) agar arrda 5ta el bolsa 5ni kvsi 25ga teng, 
 //              5ta elni sort qilish uchun 25ta operatsiya bajaradi (taxminiy qiymat)
 
-// Bubble sort Implementation using Javascript
 
-
-
+// ========================================================================================
 
 let bubbleSort = (inputArr) => {
     let len = inputArr.length;
