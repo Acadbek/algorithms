@@ -17,4 +17,4 @@ function mergeSort(array) {
 
 mergeSort([1, 5, 1, 3, 6, 8, 3, 1, 3, 5, 6, 7, 3, 23, 56, 778, 12, 34, 78, 13, 234, 56])
 
-// tugallanmagan
+// tugallanmagan.
