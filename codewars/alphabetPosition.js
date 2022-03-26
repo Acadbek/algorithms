@@ -11,4 +11,4 @@ function find(text) {
     console.log(string)
 }
 
-find("The sunset sets at twelve o' clock.")
+find("The sunset sets at twelve o' clock")
