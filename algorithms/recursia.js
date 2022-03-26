@@ -1,4 +1,4 @@
-// Funsiyani ichida o'shan funcni ozi qayta chaqirilyapti
+// Funsiyani ichida o'shan funcni ozi qayta chaqirilyapti.
 
 function recursia(num) {
     const newNum = num - 1
