@@ -4,11 +4,12 @@ function find(text) {
     let number = 0
     let string = ''
     for (let i = 0; i < text.length; i++) {
+        
         letter = text.charAt(i)
         number = alphabet[letter.toLowerCase()]
-        if (number) string += number + " ";
+        if (number) string += number + " ";      
     }
     console.log(string)
 }
 
-find("The sunset sets at twelve o' clock")
+find("jasur")
