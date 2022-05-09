@@ -1,8 +1,22 @@
 var encryptThis = function(text) {
-	const charCodes = map.call(text, (x) => x.charCodeAt(0));
-	console.log(charCodes)
-}
-encryptThis('A wise old owl lived in an oak')
+	return text.split(' ').map(function(word) {
+		console.log(word, 'word')
 
-let asci = 'A'.charCodeAt(0)
-// console.log(asci)
+		let fir1 = word.slice(1, 2)
+		console.log(fir1, 'fir1')
+
+		let last = word[word.length - 1]
+		console.log(last, 'last')
+
+		var letters = word.split('');
+		console.log(letters, 'letters');
+
+		var firstLetter = letters.shift().charCodeAt(0);
+		console.log(firstLetter, 'charCodeAt');
+
+		var newWord = firstLetter + letters.join('');
+		console.log(newWord, 'result ===============');
+	}).join(' ');
+}
+
+encryptThis('A wise')
