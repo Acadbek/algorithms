@@ -8,12 +8,22 @@
 
 //   anagrams('as', ['aabb', 'abcd', 'bbaa', 'dada', 'sa'])
 
-function anagrams(word, words) {
-	if(words.map((w) => word === w)){
-		console.log(word)
-	}else if(words.find((w) => console.log(w))) {
+// function anagrams(word, words) {
+// 	if(words.map((w) => w === word === true)){
+// 		console.log(true)
+// 	}else if(words.find((w2) => console.log(w2))) {
 
+// 	}
+// }
+
+function anagrams(word, words) {
+	if(words.find((w) => w === word === true)){
+		console.log(true)
+	}else{
+		console.log(false)
 	}
 }
 
-anagrams('salom', ['molas', 'salomm', 'sasasa'])
+anagrams('salom', ['molas', 'scalomm', 'sasasa'])
+
+// no completete solution but it works for me :)
