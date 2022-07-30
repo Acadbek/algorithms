@@ -13,5 +13,3 @@ function mySqrt(x) {
 }
 
 mySqrt(45)
-
-
