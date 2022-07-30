@@ -7,6 +7,13 @@
 // delDel('adelHello') → aHello
 // delDel('abcdel') → abcdel
 
+
+// =======================================================================================================
+
+
+//  Uzbek: string beriladi agar stringda 'del' xarflari ketmaketligi bolsa va ular 1 indexdan boshlansa
+// 'del' ni ochirib tashlang agar 'del' bolsa va u boshqa indexdan boshlansa stringni ozini qaytaring
+
 let str = 'abcdel';
 
 function delDel(x) {
