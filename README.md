@@ -1,1 +1,1 @@
-# in-free-time-with-js
+# Leetcode, CodeWars, Warmup and some Algorithms
