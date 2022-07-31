@@ -1,1 +1,1 @@
-# Leetcode, CodeWars, Warmup and some Algorithms
+# Leetcode, CodeWars, Warmup issues and some algorithms in Uzbek
