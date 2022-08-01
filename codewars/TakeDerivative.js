@@ -22,13 +22,12 @@
 // Bu funktsiya parametr sifatida ikkita raqamni oladi, birinchi raqam koeffitsient, 
 // ikkinchi raqam esa ko'rsatkichdir.
 
-// Sizning funktsiyangiz ikkita raqamni ko'paytirishi kerak va keyin ko'rsatkichdan 1 ni 
-// ayirish kerak. Keyin u ifodani chop etishi kerak 
-// (masalan, 28x ^ 7). "^1"ko'rsatkich = 2 bo'lganda kesilmasligi kerak.
+// Sizning funktsiyangiz argumentlarni ko'paytirishi kerak va keyin ko'rsatkichdan 1 ni 
+// ayirish kerak. (masalan, 28x ^ 7).
 
 // Eslatmalar:
 
-// Ushbu funktsiyaning chiqishi satr bo'lishi kerak
+// Return dan kelgan javob string bolishi kerak.
 // Ko'rsatkich hech qachon 1 bo'lmaydi va hech bir raqam 0 bo'lmaydi.
 
 
@@ -48,6 +47,5 @@ function derive2(coefficient, exponent) {
 	return `${coefficient * exponent}x^${exponent - 1}`
 }
 
-// 56x^7" 
 derive(5, 9)
 derive2(4, 7)
