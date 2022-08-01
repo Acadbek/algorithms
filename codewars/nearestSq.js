@@ -22,6 +22,8 @@ nearest_sq(122)
 // 5 ni 5 martta oziga kopaytiradi javob 3125 chiqadi. 
 // Buni 5**2 bu usul bilan ham yozsa boladi
 
+const nearest_sq2 = n => Math.round(Math.sqrt(n)) ** 2
+
 // Math.round = kasr sonni butun eng yaqin butun qismini qaytaradi --> 5.3 = 5
 // 4.7 = 5
 
