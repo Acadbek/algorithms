@@ -20,13 +20,12 @@
 // 2 - functionda sort() methodini o'zi ishlatilgan.
 
 function sumTwoSmallestNumbers(numbers) {
-	return numbers.sort((a, b) => a - b).slice(0, 2).reduce(function (a, b) {
-		return a + b
+	return numbers.sort((a, b) => a - b).slice(0, 2).reduce((a, b) => {
+		console.log(a + b);
 	})
 }
 
-sumTwoSmallestNumbers([3, 87, 45, 12, 7, 1])
-
+sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453])
 
 
 
