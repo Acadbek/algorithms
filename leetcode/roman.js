@@ -1,3 +1,12 @@
+function c (prop, info) {
+	if(info == undefined) {
+		console.log(prop);
+	}else{
+		console.log(prop, 'info:', info)
+	}
+} 
+
+
 var romanToInt = function(s){
 	const roman = {
 		I: 1,
@@ -7,16 +16,50 @@ var romanToInt = function(s){
 		C: 100,
 		D: 500,
 		M: 1000,
-	}
-	// c(roman)
-	// c(s)
-
+	};
+	
+	c(s.split('').map((value,index,arr) => roman[arr[index - 1]] < roman[value] 
+	? (roman[value] - ( 2 * roman[arr[index-1] ])) 
+	: (roman[value]))
+		.reduce((a, b) => a + b))
 }
-function c (prop, string) {
-	console.log(prop, string)
-} 
+romanToInt('VIXM');
 
-// romanToInt('III')
+
+ // 
+	// for(let key in roman){
+	// 	return (s.split('').map((val, index, arr) => {
+	// 		for(let i = 1; i < arr.length; i++) {
+	// 			c(key === arr[index + 1] ? c(key) : false)
+	// 		}
+	// 		// c(val === key ? c(roman[key]) : false)
+	// 		// c(val, index)
+	// 	}))
+	// }
+// const keys = Object.keys(roman)
+// return (keys.map((value, index, arr) => {
+// 	c(value === s ? c(keys[value]) : false)
+// }))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const user = {
 	age: 41,
@@ -74,10 +117,11 @@ var json = {
 const sumNumber = (data) => {
 	data.data.forEach(element => {
 		var sum = element.jobTasks.reduce(function(sum, ele) {
+			c(ele, sum)
 			return sum+ele.amountString
 		}, 0)
 		c(sum)
 	});
 }
 
-sumNumber(json)
+// sumNumber(json)
