@@ -7,26 +7,11 @@ function c (prop, info) {
 } 
 
 
-var romanToInt = function(s){
-	const roman = {
-		I: 1,
-		V: 5,
-		X: 10,
-		L: 50,
-		C: 100,
-		D: 500,
-		M: 1000,
-	};
-	
-	c(s.split('').map((value,index,arr) => roman[arr[index - 1]] < roman[value] 
-	? (roman[value] - ( 2 * roman[arr[index-1] ])) 
-	: (roman[value]))
-		.reduce((a, b) => a + b))
-}
+
 romanToInt('VIXM');
 
 
- // 
+ 
 	// for(let key in roman){
 	// 	return (s.split('').map((val, index, arr) => {
 	// 		for(let i = 1; i < arr.length; i++) {
