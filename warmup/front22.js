@@ -21,6 +21,7 @@ function front22(str) {
 	let s = str.substring(0, 2)
 	console.log(s + str + s);
 }
+
 // 2 - yoli
 function front222(str) {
 	console.log(str.substring(0, 2) + str + str.substring(0, 2));

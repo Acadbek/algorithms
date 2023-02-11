@@ -17,9 +17,9 @@
 let str = 'abcdel';
 
 function delDel(x) {
-	if(x.substring(1,4) === 'del') {
+	if (x.substring(1, 4) === 'del') {
 		return str.replace('del', '')
-	}else{
+	} else {
 		return str
 	}
 }

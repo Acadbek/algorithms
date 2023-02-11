@@ -5,7 +5,7 @@
 // Butun sonlar beriladi ularni ichidan eng kattasini qaytarishingiz kerak
 
 function intMax(a, b, c) {
-	console.log(a > Math.max(b, c) ? a : Math.max(b, c));
+	console.log(Math.max(a, b, c));
 }
 
-intMax(102000000, 7, 50000000)
+intMax(10200000000, 7, 50000000)
