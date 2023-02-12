@@ -5,6 +5,35 @@ function findLettersAndSpecialChar(str) {
 	return str.match(specialChar) || str.match(letters) || !str.includes(":")
 }
 
+function secToMin(seconds) {
+	return +(seconds / 60).toFixed(1);
+}
+
+function incrementFn(h, m, s) {
+	let hh = h;
+	let mm = m;
+	let ss = s;
+
+	if (s > 59) {
+		ss = secToMin(s);
+		mm = m + 1;
+		switch (mm > 59) {
+			case true:
+				m = mm
+				if (mm > 59) {
+					hh = h + 1
+					console.log(hh, mm, ss);
+				}
+				break;
+
+			default:
+				break;
+		}
+	} else {
+		console.log(hh, mm, ss);
+	}
+}
+
 function timeCorrect(timestring) {
 	if (isNaN(timestring) && timestring.trim() === '') {
 		return '';
@@ -16,27 +45,29 @@ function timeCorrect(timestring) {
 		let s = timestring.split(':')[2]
 
 
+		incrementFn(+h, +m, +s)
+
 
 		// if (s > 59) {
 		// 	m + 1
 		// }
 
-		if (h > 23) {
-			h = "00"
-		}
-		if (m > 59) {
-			m > 59 ? h + 1 : ''
-			m = "00"
-		}
-		if (s > 59) {
-			s = "00"
-		}
+		// if (h > 23) {
+		// 	h = "00"
+		// }
+		// if (m > 59) {
+		// 	m > 59 ? h + 1 : ''
+		// 	m = "00"
+		// }
+		// if (s > 59) {
+		// 	s = "00"
+		// }
 
-		console.log(h, m, s)
+		// console.log(h, m, s)
 	}
 }
 
-timeCorrect("21:58:45")
+timeCorrect("21:59:70")
 
 // "09:10:01" -> "09:10:01"  
 // "11:70:10" -> "12:10:10"  
