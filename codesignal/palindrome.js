@@ -28,4 +28,4 @@ function solution(inputString) {
   }
 }
 
-solution('vvv')
+solution('aziza')

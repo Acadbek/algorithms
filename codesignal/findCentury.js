@@ -19,10 +19,10 @@
 // Misol:
 
 // year = 1905, chiqish kerak = 20;
-// year = 1700, chiqish kerak = 17.
+// year = 1700, chiqish kerak = 17;
 
 
 function solution(year) {
-  return Math.ceil((year / 100))
+  console.log(Math.ceil((year / 100)))
 }
-solution(2022)
+solution(1701)

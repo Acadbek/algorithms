@@ -24,8 +24,8 @@ console.log(list1.concat(list2).sort())
 
 class CustomArray {
     constructor() {
-        this.data = {},
-            this.length = 0;
+        this.data = {};
+        this.length = 0;
     }
 
     // getting the element of the array using the index

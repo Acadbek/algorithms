@@ -12,5 +12,5 @@ function find(text) {
     console.log(string)
 }
 
-find("jasur")
+find("asad")
 
