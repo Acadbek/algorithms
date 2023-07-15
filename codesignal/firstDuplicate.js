@@ -7,7 +7,7 @@ function solution(arr) {
     else if (obj[arr[i]] === 1) res.push(arr[i])
   }
 
-  console.log(res); 
+  console.log(Math.max(...res));
 }
 
 solution([2, 1, 3, 5, 3, 2])
