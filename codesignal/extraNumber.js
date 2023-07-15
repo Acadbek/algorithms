@@ -15,5 +15,5 @@ function solution(a, b, c) {
 
 const solution2 = (a, b, c) => a ^ b ^ c // optimize way
 
-
+  
 solution(2, 2, 7)
