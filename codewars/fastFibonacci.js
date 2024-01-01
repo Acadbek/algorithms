@@ -10,3 +10,13 @@ function fib2(num) {
 
 // not complited
 console.log(fib2(1000));
+
+
+
+
+
+
+
+
+
+
