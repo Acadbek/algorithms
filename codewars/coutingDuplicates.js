@@ -1,18 +1,19 @@
-function duplicateCount(text) {
-  let obj = {};
-  let counter = 0;
-  text = text.toLowerCase();
-  for (let i = 0; i < text.length; i++) {
-    if (!obj[text[i]]) {
-      obj[text[i]] = 1; // a = 1, b = 1, c = 1
-    }
-    else if (obj[text[i]] >= 1) {
-      obj[text[i]] += 1; // c = 2
-      counter++;
-      console.log(text[i], 'else if');
+function dub(str) {
+  let obj = {}
+  let count = 0
+  str = str.toLowerCase()
+
+  for (let i = 0; i < str.length; i++) {
+    if (!obj[str[i]]) {
+      obj[str[i]] = 1
+    } else if (obj[str[i]] === 1) {
+      obj[str[i]] += 1
+      count++
     }
   }
-  return counter;
-}
-console.log(duplicateCount('abcc'), 'res'); // 1
 
+  return count
+}
+
+
+console.log(dub('aabbbc'));
