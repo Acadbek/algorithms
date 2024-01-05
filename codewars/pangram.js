@@ -16,3 +16,12 @@ function isPangram(string) {
 isPangram('The quick brown fox jumps over the lazy dog')
 
 // abcdefghijklmnopqrstuvwxyz
+
+
+// maybe best practice!
+
+// function isPangram(string) {
+//   const alphabetList = [...'abcdefghijklmnopqrstuvwxyz'];
+
+//   return alphabetList.every((letter) => string.toLowerCase().includes(letter));
+// }
