@@ -3,8 +3,8 @@ function find(text) {
     let letter = ''
     let number = 0
     let string = ''
+    
     for (let i = 0; i < text.length; i++) {
-        
         letter = text.charAt(i)
         number = alphabet[letter.toLowerCase()]
         if (number) string += number + " ";      

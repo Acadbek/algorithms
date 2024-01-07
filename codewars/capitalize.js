@@ -11,6 +11,6 @@
 // }
 
 
-let capitalize = (s, a) => s.split``.map((c, i) => a.includes(i) ? c.toUpperCase() : c).join``;
+let capitalize = (s, arr) => s.split``.map((c, i) => arr.includes(i) ? c.toUpperCase() : c).join``;
 
 console.log(capitalize('hello', [1, 3, 4]));

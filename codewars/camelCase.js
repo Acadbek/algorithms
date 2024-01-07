@@ -4,4 +4,4 @@ function solution(word) {
     console.log(`${newWord[0]}${upperLetter}${newWord[1].substring(1)}`, '======CamelCase function======')
 }
 
-solution('camel case')
+solution('camel case') // camelCase asad bek asadBek

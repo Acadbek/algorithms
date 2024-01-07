@@ -34,7 +34,7 @@ function diamond(n) {
 		});
 	}
 
-  diamond(9)
+  diamond(5)
   // diamond(5)
   // diamond(-3)
   // diamond(9)

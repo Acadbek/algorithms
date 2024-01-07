@@ -1,4 +1,5 @@
-// You're given three integers, a, b and c. It is guaranteed that two of these integers are equal to each other. What is the value of the third integer?
+// You're given three integers, a, b and c. It is guaranteed that two of these
+// integers are equal to each other. What is the value of the third integer?
 
 // Example
 
@@ -15,5 +16,7 @@ function solution(a, b, c) {
 
 const solution2 = (a, b, c) => a ^ b ^ c // optimize way
 
-  
+
 solution(2, 2, 7)
+
+console.log(2 ^ 7);
