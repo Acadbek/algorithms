@@ -16,55 +16,6 @@ function c(i) {
 
 const regex = /\d+/;
 
-// function sortString(str) {
-//   let arr = []
-
-//   str.split(' ').forEach((el, i) => {
-//     if (el[el.indexOf(el[i])]) {
-//       c(el[el.indexOf(i)])
-//       // 
-//       arr.push(el)
-//     }
-//   })
-//   c('-----------')
-//   console.log('res: ', arr);
-// }
-
-
-function s(str) {
-  let res = []
-  let nums = []
-  let strToArr = str.split(' ');
-
-  strToArr.forEach((element, index) => {
-    element.split('').forEach((l, i) => {
-      if (regex.test(l)) {
-        nums.push(l)
-        nums = nums.sort()
-        console.log(nums);
-      }
-    })
-  });
-
-}
-
-
-s('is2 Thi1s T4est 3a')
-
-function s(str) {
-  const arr = str.split(' ')
-  arr.map((item, i) => {
-    item.split('').map((l) => {
-      if (regex.test(l)) {
-        let first;
-        let temp;
-        first = l
-
-      }
-    })
-  })
-}
-
 function a(words) {
   let arr = words.split(' ')
   let r = []
