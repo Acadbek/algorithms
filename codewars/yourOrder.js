@@ -28,7 +28,13 @@ function a(words) {
 
   r.sort((a, b) => a[1] - b[1]).map(x => x.splice(1, 1))
 
-  console.log(r.join(''));
+  return r.join('')
 }
 
 a('is2 Thi1s T4est 3a')
+
+// best practise
+
+// return words.split(' ').sort(function(a, b){
+//   return a.match(/\d/) - b.match(/\d/);
+// }).join(' ');
