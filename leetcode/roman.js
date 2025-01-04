@@ -29,4 +29,4 @@ const romanToInteger = (s) => {
 	return total
 }
 
-c(romanToInteger('MCMXCIV'), 'res'); // 1994
+c(romanToInteger('III'), 'res'); // 1994
